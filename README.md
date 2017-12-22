@@ -8,6 +8,7 @@
 1. Word vector file
 
     A file containing a pre-trained word vector model. In word vector model, each line has a word vector as follows :
+
     `the -1.0 0.1 0.2`
 2. Lexicon file (provided in thesaurus_ontology/)
 3. Word similarity evaluation dataset (provided in eval_data/)
