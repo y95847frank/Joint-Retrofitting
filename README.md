@@ -6,9 +6,9 @@
 
 ## Data
 1. Word vector file
-2. Lexicon file (provided here)
+2. Lexicon file (provided in eval_data/)
 
-## Execution
+## Program Execution
 
 ```
 $ python joint_retrofit.py -i word_vec_file -l lexicon_file -n num_iter -o out_vec_file
@@ -23,7 +23,5 @@ Example :
 python retrofit.py -i word_vec_file -l ontology_file -n num_iter -o out_vec_file
 ```
 
-
 ## Reference
-```
-```
+
