@@ -6,11 +6,15 @@
 
 ## Data
 1. Word vector file
+
         A file containing a pre-trained word vector model. In word vector model, each line has a word vector as follows :
+
         `the -1.0 0.1 0.2`
 
 2. Lexicon file (provided in `thesaurus_ontology/`)
+
         It's an ontology file that contains words and its' synonyms. Each line represents a word and all it's synonyms. The format is :
+
         ```<wordsense><weight> <neighbor-1><weight> <neighbor-2><weight> ...```
 
 3. Word similarity evaluation dataset (provided in `eval_data/`)
