@@ -101,9 +101,6 @@ if __name__=='__main__':
   parser.add_argument("-l", "--lexicon", type=str, default=None, help="Lexicon file name")
   parser.add_argument("-o", "--output", type=str, help="Output word vecs")
   parser.add_argument("-n", "--numiter", type=int, default=10, help="Num iterations")
-  parser.add_argument("-w1", "--w1", type=float, default=1.0, help="Alpha Wight")
-  parser.add_argument("-w2", "--w2", type=float, default=1.0, help="Beta Weight")
-  parser.add_argument("-w3", "--w3", type=float, default=1.0, help="Gamma Weight")
   args = parser.parse_args()
 
   wordVecs = read_word_vecs(args.input)
@@ -112,4 +109,4 @@ if __name__=='__main__':
   outFileName = args.output
   
   ''' Enrich the word vectors using ppdb and print the enriched vectors '''
-  print_word_vecs(retrofit(wordVecs, lexicon, numIter, args.w1, args.w2, args.w3), outFileName) 
+  print_word_vecs(retrofit(wordVecs, lexicon, numIter, 1.0, 1.0, 1.0), outFileName) 
