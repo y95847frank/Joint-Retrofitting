@@ -1,4 +1,6 @@
 # Joint-Retrofitting
+Ting-Yu Yen (b03902052@ntu.edu.tw; tyyen@nlg.csie.ntu.edu.tw)
+[Natural Language Processing Laboratory at National Taiwan University](http://nlg3.csie.ntu.edu.tw)
 
 ## Overview
 The joint sense retrofitting model utilizes the contextual and ontological information to derive sense vectors. The sense embedding is learned iteratively via constraining the distance between the sense vector and its word form vector, its sense neighbors and its contextual neighbors. You can use this tool to create sense embedding vector from any trained word vector quickly. Moreover, I provide the evaluation program and four benchmark datasets that can easily test your new sense vector.
