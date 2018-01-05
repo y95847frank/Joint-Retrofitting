@@ -1,5 +1,8 @@
 # Joint-Retrofitting
 
+## Overview
+The joint sense retrofitting model utilizes the contextual and ontological information to derive sense vectors. The sense embedding is learned iteratively via constraining the distance between the sense vector and its word form vector, its sense neighbors and its contextual neighbors. You can use this tool to create sense embedding vector from any trained word vector. Moreover, I provide the evaluation program and four benchmark datasets that can easily evalute new sense vector.
+
 ## Requirements
 1. Python3
 2. Numpy
@@ -10,10 +13,14 @@
     A file containing a pre-trained word vector model. In word vector model, each line has a word vector as follows :
         `the -1.0 0.1 0.2`
 
+    p.s. you can find pre-trained word vector in [GloVe](https://nlp.stanford.edu/projects/glove/).
+
 2. Lexicon file (provided in `thesaurus_ontology/`)
 
     It's an ontology file that contains words and its' synonyms. Each line represents a word and all it's synonyms. The format is :
         `<wordsense><weight> <neighbor-1><weight> <neighbor-2><weight> ...`
+
+    ps. I used [Thesaurus-API](https://github.com/Manwholikespie/thesaurus-api) to parse the ontology.
 
 3. Word similarity evaluation dataset (provided in `eval_data/`)
 
@@ -42,4 +49,12 @@ In `eval_data/` directory, there are MEN, MTurk, RW, WS353 datasets. You can add
 
 
 ## Reference
+Pennington, J. et al. 2014. Glove: Global vectors for word representation.
+Jauhar, S.K. et al. 2015. Ontologically grounded multi-sense representation learning for semantic vector space models.
+M. Faruqui, J. Dodge, S.K. Jauhar, C. Dyer, E. Hovy and N.A. Smith et al. 2015. Retrofitting word vectors to semantic lexicons.
+
+## License
+
+## Contact
+Feel free to [contact me](mailto:b03902052@ntu.edu.tw) if there's any problems.
 
