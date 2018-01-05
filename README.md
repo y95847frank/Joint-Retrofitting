@@ -1,6 +1,4 @@
 # Joint-Retrofitting
-Ting-Yu Yen (b03902052@ntu.edu.tw; tyyen@nlg.csie.ntu.edu.tw)
-
 [Natural Language Processing Laboratory](http://nlg3.csie.ntu.edu.tw) at National Taiwan University
 
 ## Overview
