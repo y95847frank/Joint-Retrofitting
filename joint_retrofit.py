@@ -91,7 +91,7 @@ def retrofit(wordVecs, lexicon, numIters, w1, w2, w3):
       for (ppWord, weight) in zip(wordNeighbours, weightNeighbours):
         newVec += newWordVecs[ppWord] * weight
         numNeighbours += weight
-      newWordVecs[word] = newVec/(numNeighbours)
+      newWordVecs[word.split('#')[0]] = newVec/(numNeighbours)
   return newWordVecs
   
 if __name__=='__main__':
