@@ -55,6 +55,16 @@ In `eval_data/` directory, there are MEN, MTurk, RW, WS353 datasets. You can add
 - M. Faruqui, J. Dodge, S.K. Jauhar, C. Dyer, E. Hovy and N.A. Smith et al. 2015. Retrofitting word vectors to semantic lexicons.
 
 ## License
+If you use this code please cite the following paper:
+
+```
+@InProceedings{the Web Conference 2018,
+  author    = {Ting-Yu Yen, Yang-Yin Lee, Hen-Hsen Huang, and Hsin-Hsi Chen},
+  title     = {That Makes Sense: Joint Sense Retrofitting from Contextual and Ontological Information},
+  booktitle = {Proceeding WWW '18 Companion Proceedings of the The Web Conference 2018},
+  year      = {2018},
+}
+```
 
 ## Contact
 Feel free to [contact me](mailto:b03902052@ntu.edu.tw) if there's any problems.
