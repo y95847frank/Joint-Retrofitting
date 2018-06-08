@@ -57,9 +57,9 @@ In `eval_data/` directory, there are MEN, MTurk, RW, WS353 datasets. You can add
 ## How to cite this resource
 Please cite the following paper when referring to Joint in academic publications and papers.
 
-```
+`
 Ting-Yu Yen, Yang-Yin Lee, Hen-Hsen Huang and Hsin-Hsi Chen (2018). “That Makes Sense: Joint Sense Retrofitting from Contextual and Ontological Information.” In Proceedings of the Web Conference 2018, poster, 23-27 April 2018, Lyon, France.
-```
+`
 
 ## Contact
 Feel free to [contact me](mailto:tyyen@nlg.csie.ntu.edu.tw) if there's any problems.
