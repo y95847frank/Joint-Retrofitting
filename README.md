@@ -1,5 +1,5 @@
 # Joint-Retrofitting
-[Natural Language Processing Laboratory](http://nlg3.csie.ntu.edu.tw) at National Taiwan University
+[Natural Language Processing Laboratory](http://nlg.csie.ntu.edu.tw) at National Taiwan University
 
 ## Overview
 The joint sense retrofitting model utilizes the contextual and ontological information to derive sense vectors. The sense embedding is learned iteratively via constraining the distance between the sense vector and its word form vector, its sense neighbors and its contextual neighbors. You can use this tool to create sense embedding vector from any trained word vector quickly. Moreover, I provide the evaluation program and four benchmark datasets that can easily test your new sense vector.
@@ -54,18 +54,11 @@ In `eval_data/` directory, there are MEN, MTurk, RW, WS353 datasets. You can add
 - Jauhar, S.K. et al. 2015. Ontologically grounded multi-sense representation learning for semantic vector space models.
 - M. Faruqui, J. Dodge, S.K. Jauhar, C. Dyer, E. Hovy and N.A. Smith et al. 2015. Retrofitting word vectors to semantic lexicons.
 
-## License
-If you use this code please cite the following paper:
+## How to cite this resource
+Please cite the following paper when referring to Joint in academic publications and papers.
 
-```
-@InProceedings{the Web Conference 2018,
-  author    = {Ting-Yu Yen, Yang-Yin Lee, Hen-Hsen Huang, and Hsin-Hsi Chen},
-  title     = {That Makes Sense: Joint Sense Retrofitting from Contextual and Ontological Information},
-  booktitle = {Proceeding WWW '18 Companion Proceedings of the The Web Conference 2018},
-  year      = {2018},
-}
-```
+Ting-Yu Yen, Yang-Yin Lee, Hen-Hsen Huang and Hsin-Hsi Chen (2018). “That Makes Sense: Joint Sense Retrofitting from Contextual and Ontological Information.” In Proceedings of the Web Conference 2018, poster, 23-27 April 2018, Lyon, France.
 
 ## Contact
-Feel free to [contact me](mailto:b03902052@ntu.edu.tw) if there's any problems.
+Feel free to [contact me](mailto:tyyen@nlg.csie.ntu.edu.tw) if there's any problems.
 
