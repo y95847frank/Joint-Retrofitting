@@ -6,6 +6,7 @@ import re
 import sys
 from collections import defaultdict
 from copy import deepcopy
+import numpy as np
 
 isNumber = re.compile(r'\d+.*')
 def norm_word(word):
@@ -91,7 +92,11 @@ def retrofit(wordVecs, lexicon, numIters, w1, w2, w3):
       for (ppWord, weight) in zip(wordNeighbours, weightNeighbours):
         newVec += newWordVecs[ppWord] * weight
         numNeighbours += weight
-      newWordVecs[word.split('#')[0]] = newVec/(numNeighbours)
+      tmp_vec = newVec/(numNeighbours)
+      if word.split('#')[0] not in newWordVecs:
+        newWordVecs[word.split('#')[0]] = tmp_vec
+      elif np.linalg.norm(tmp_vec-newWordVecs[word.split('#')[0]]) > 0.1:
+        newWordVecs[word.split('#')[0]] = tmp_vec
   return newWordVecs
   
 if __name__=='__main__':
